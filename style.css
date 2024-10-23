@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Calculadora{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.pantalla{
+    grid-column: 1 / -1;
+    background-color: rgb(133, 143, 132);
+    padding: 1rem;
+    font-size: 40px;
+    text-align: right;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    font-family: 'Lucida Sans';
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.boton{
+    background-color: rgb(243, 243, 243);
+    border-color: azure;
+    height: 55;
+    width: 55;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(157, 169, 180);
+}
+
+#Oper{
+    background-color: rgb(161, 208, 216);
+    border-color: azure;
+    height: 55;
+    width: 55;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+#Oper:hover{
+    background-color: rgb(150, 241, 241);
+}
+
+#C{
+    background-color: rgb(161, 208, 216);
+    display: flex;
+    height: 55;
+    width: 55;
+}
+#C:hover{
+    background-color: rgb(150, 241, 241);
+}
+
+#borrar{
+    background-color: rgb(161, 208, 216);
+    display: flex;
+    height: 55;
+    width: 55;
+}
+#borrar:hover{
+    background-color: rgb(150, 241, 241);
+}
+
+#cero{
+    grid-column: span 2;
+    background-color: rgb(161, 208, 216);
+    display: flex;
+    height: 55;
+    width: 150;
+}
+#cero:hover{
+    background-color: rgb(150, 241, 241);
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: rgb(161, 208, 216);
+    display: flex;
+    height: 150;
+    width: 55;
+}
+#igual:hover{
+    background-color: rgb(150, 241, 241);
+}
